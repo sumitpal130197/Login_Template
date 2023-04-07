@@ -7,6 +7,8 @@ body{
 }
 .left-side-content
 {
+    display: grid;
+    align-items: center;
     background-color: #A1CDD0;
     border-radius: 15px 0px  0px 15px;
 
@@ -40,8 +42,30 @@ body{
     padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
+.right-side-content
+{
+    margin: 50px;
+}
+@media (max-width:1204px) {
+.with-google
+{
+    font-size: 13px;
+   
+    padding: 9px;
+} 
+.google-fix{
+    margin: 20px 10px 20px 0;
+} 
+.facebook-fix{
+    margin: 20px 0 20px 10px;
+}  
+}
+@media (max-width:991px) {   
+    .right-side-content {
+        margin: 10px;
+    }
+    }
 .or-cls h6
 {
     text-align: center;
@@ -55,10 +79,7 @@ body{
     border-left:none ;
     border-right:none ;
 }
-.right-side-content
-{
-    margin: 50px;
-}
+
 .create-btn 
 {
     display: flex;
@@ -77,6 +98,33 @@ body{
     border: 5px solid #fff;
     /* background-color: #fff; */
     border-radius: 18px;
+
+}
+@media (max-width:455px) {
+    .google-fix{
+        display: flex;
+        justify-content: center;
+    }
+    .facebook-fix{
+        display: flex;
+        justify-content: center;
+    }
+    .sign-up-with
+    {
+        display: inline-block;
+    }
+    .sign-up-section
+    {
+        margin: 5px 0px;
+    }
+}
+
+@media (max-width:585px) {
+   
+    .sign-up-section
+    {
+        margin: 5px 0px;
+    }
 }
 .last-line
 {
@@ -85,4 +133,15 @@ body{
 }
 .last-line span{
     color: #428c94; font-weight: bolder;
+}
+@media (max-width: 767px) {
+    .d-none-sm{
+        display: none;
+    }
+    .google-fix {
+        margin: 20px 5px 20px 0;
+    }
+    .facebook-fix {
+        margin: 20px 0 20px 5px;
+    }
 }
